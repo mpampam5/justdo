@@ -1,0 +1,167 @@
+.logo-img{
+  height: 300px;
+}
+
+#menu-content {
+  width: 100%;
+  height: auto;
+  background: #212121;
+  border-top:#000000;
+  position: fixed;
+  z-index: 999;
+}
+
+#cssmenu{ height:39px; display:block; padding:0; margin-left:100px;}
+#cssmenu > ul {list-style:inside none; padding:0; margin:0;}
+#cssmenu > ul > li {list-style:inside none; padding:0; margin:0; float:left; display:block; position:relative;}
+#cssmenu > ul > li > a{ outline:none; display:block; position:relative; padding:12px 20px; font:bold 13px/100% Arial, Helvetica, sans-serif; text-align:center; text-decoration:none; text-shadow:1px 1px 0 rgba(0,0,0, 0.4); }
+#cssmenu > ul > li:first-child > a{border-radius:5px 0 0 5px;}
+#cssmenu > ul > li > a:after{ content:''; position:absolute;  top:-1px; bottom:-1px; right:-2px; z-index:99; color:#B1B1B1;}
+#cssmenu ul li.has-sub:hover > a:after{top:0; bottom:0;}
+#cssmenu > ul > li.has-sub > a:before{ content:''; position:absolute; top:18px; right:6px; border:5px solid transparent; border-top:5px solid #fff; color:#B1B1B1; }
+#cssmenu > ul > li.has-sub:hover > a:before{top:19px;}
+#cssmenu ul li.has-sub:hover > a{border-color:#3f3f3f; padding-bottom:13px; padding-top:13px; top:-1px; z-index:999; }
+#cssmenu ul li.has-sub:hover > ul, #cssmenu ul li.has-sub:hover > div{display:block;}
+#cssmenu ul li.has-sub > a:hover{ border-color:#3f3f3f;}
+#cssmenu ul li > ul, #cssmenu ul li > div{ display:none; width:auto; position:absolute; top:38px; padding:10px 0; background:#212121; border-radius:0 0 5px 5px; z-index:999; }
+#cssmenu ul li > ul{width:200px;}
+#cssmenu ul li > ul li{display:block; list-style:inside none; padding:0; margin:0; position:relative;}
+#cssmenu ul li > ul li a{ outline:none; display:block; position:relative; margin:0; padding:8px 20px; font:10pt Arial, Helvetica, sans-serif; color:#B1B1B1; text-decoration:none; text-shadow:1px 1px 0 rgba(0,0,0, 0.5); }
+
+
+#cssmenu > ul > li > ul > li a:hover{background:#111;color:#fff;}
+#cssmenu > ul > li > a{ color:#B1B1B1;}
+#cssmenu > ul > li > a:after{border-color:#444;}
+#cssmenu > ul > li > a:hover{color:#fff;}
+
+
+.badge-disabled{
+  color: #fff;
+  background-color: #bfbfbf;
+}
+/* table none border */
+.table-borderless td,
+.table-borderless th {
+    border: none;
+}
+
+#alert{
+  z-index: 10000;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 300px;
+}
+
+#table_filter label{
+  float: right;
+}
+
+
+#menu-list {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+#menu-list  li {
+  border: 1px solid #ddd; /* Add a thin border to each list item */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Add a grey background color */
+  padding: 5px; /* Add some padding */
+}
+
+#menu-list
+.menu-action{
+  position: absolute;
+  right: 45px;
+}
+
+#sub-menu-list{
+
+}
+
+#sub-menu-list li{
+  border: none;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Add a grey background color */
+  padding: 5px; /* Add some padding */
+}
+
+
+#login-template{
+  background: rgb(0,212,255) no-repeat;
+  background-size: 100%;
+  /* background: linear-gradient(100deg, rgba(0,212,255,1) 0%, rgba(0,255,162,1) 50%, rgba(0,212,255,1) 100%); */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  width: 10px;
+	background-color: #F5F5F5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #acacac;
+}
+
+.pre-loader{
+  position: relative;
+  width: 80px;
+  left: 40%;
+}
+
+
+.foto-aparatur{
+  height: 280px;
+  /* max-height: 350px; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position:center;
+  box-shadow: 1px 1px 3px #9f9f9f;
+  cursor: pointer;
+}
+
+
+
+
+#pengaturan{
+  padding : 5px 4px 5px 4px;
+}
+.pengaturan {
+  margin:5px 4px 5px 4px;
+  text-align:center;
+  padding:20px;
+  box-shadow:1px 2px 5px #a9a8a8;
+  border-radius:10px;
+  background:#ddd;
+  color:#676767;
+}
+.pengaturan a i{
+  font-size:60px;
+  text-align:center;
+}
+
+.container-logo{
+  padding:10px 40px 10px 40px;
+  /* box-shadow: 1px 2px 6px #9f9f9f;
+  border-radius: 10px; */
+}
+.logo-pengaturan{
+  max-width: 200px;
+  max-height: 200px;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

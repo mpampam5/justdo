@@ -1,0 +1,188 @@
+<section class="col-md-10 mx-auto">
+  <div class="container bg-secondary p-b-40">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="col-sm-12 m-t-20">
+            <h5 class="post-title-header">Article</h5>
+            <?php foreach ($news as $news): ?>
+            <!-- post -->
+              <div class="post post-md">
+                <div class="post-thumbnail">
+                  <a href="blog-post-medium.html">
+                    <?php
+                        if ($news->image!="") {
+                          $image_post = base_url("temp/img_manager/news/thumbs/$news->image");
+                        }else {
+                          $image_post = base_url("temp/default.png");
+                        }
+                     ?>
+                    <div class="image-post" style='background:url("<?=$image_post?>")'></div>
+                  </a>
+                </div>
+                <div class="post-block">
+                  <h2 class="post-title"><a href="<?=site_url("news/$news->id_news/$news->slug")?>" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="<?=$news->title?>"><?=substr($news->title,0,85)?>...</a></h2>
+                  <div class="post-meta">
+                    <span><i class="fa fa-clock-o"></i> <?=date('d M Y',strtotime($news->created_at))?></span>
+                    <span><i class="fa fa-tags"></i> <?=$news->category?></span>
+                    <span><i class="fa fa-user"></i> Admin</a></span>
+                  </div>
+                  <div style="text-align:justify">
+                    <?=substr(strip_tags($news->description),0,100)?><a href="<?=site_url("news/$news->id_news/$news->slug")?>" class="text-warning">[Read More]</a>
+                  </div>
+                </div>
+              </div>
+
+
+          <?php endforeach; ?>
+        </div>
+
+
+
+      </div>
+
+      <div class="col-lg-4 m-t-20">
+        <div class="sidebar">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="bg-secondary p-t-15 p-b-5 p-x-15 m-b-5">
+    <div class="owl-carousel owl-videos">
+      <div class="card card-video">
+        <div class="card-img">
+          <a href="video-post.html">
+          <img src="https://i1.ytimg.com/vi/GaERL8Nrl9k/mqdefault.jpg" alt="Tom Clancy's Ghost Recon: Wildlands">
+        </a>
+          <div class="card-meta">
+            <span>4:32</span>
+          </div>
+        </div>
+        <div class="card-block">
+          <h4 class="card-title"><a href="video-post.html">Tom Clancy's Ghost Recon: Wildlands</a></h4>
+          <div class="card-meta">
+            <span><i class="fa fa-clock-o"></i> 2 hours ago</span>
+            <span>423 views</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-video">
+        <div class="card-img">
+          <a href="video-post.html">
+          <img src="https://i1.ytimg.com/vi/mW4LMCtoIkg/mqdefault.jpg" class="card-img-top" alt="Anthem Official Gameplay Reveal">
+        </a>
+          <div class="card-meta">
+            <span>6:46</span>
+          </div>
+        </div>
+        <div class="card-block">
+          <h4 class="card-title"><a href="video-post.html">Anthem Official Gameplay Reveal</a></h4>
+          <div class="card-meta">
+            <span><i class="fa fa-clock-o"></i> 2 weeks ago</span>
+            <span>447 views</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-video">
+        <div class="card-img">
+          <a href="video-post.html">
+          <img src="https://i1.ytimg.com/vi/-PohBqV_i7s/mqdefault.jpg" class="card-img-top" alt="Shadow of War Gameplay Walkthrough">
+        </a>
+          <div class="card-meta">
+            <span>9:58</span>
+          </div>
+        </div>
+        <div class="card-block">
+          <h4 class="card-title"><a href="video-post.html">Shadow of War Gameplay Walkthrough</a></h4>
+          <div class="card-meta">
+            <span><i class="fa fa-clock-o"></i> March 10, 2017</span>
+            <span>914 views</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-video">
+        <div class="card-img">
+          <a href="video-post.html">
+          <img src="https://i1.ytimg.com/vi/feqIj5PaqCQ/mqdefault.jpg" class="card-img-top" alt="Call of Duty WW2 Multiplayer Gameplay">
+        </a>
+          <div class="card-meta">
+            <span>4:32</span>
+          </div>
+        </div>
+        <div class="card-block">
+          <h4 class="card-title"><a href="video-post.html">Call of Duty WW2 Multiplayer Gameplay</a></h4>
+          <div class="card-meta">
+            <span><i class="fa fa-clock-o"></i> 3 days ago</span>
+            <span>423 views</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-video">
+        <div class="card-img">
+          <a href="video-post.html">
+          <img src="https://i.ytimg.com/vi/N1NsF9c90f0/mqdefault.jpg" alt="Final Fantasy VII Remake">
+        </a>
+          <div class="card-meta">
+            <span>3:05</span>
+          </div>
+        </div>
+        <div class="card-block">
+          <h4 class="card-title"><a href="video-post.html">Final Fantasy VII Remake</a></h4>
+          <div class="card-meta">
+            <span><i class="fa fa-clock-o"></i> 2 days ago</span>
+            <span>589 views</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-video">
+        <div class="card-img">
+          <a href="video-post.html">
+          <img src="https://i.ytimg.com/vi/lQXpDL3SNWQ/mqdefault.jpg" class="card-img-top" alt="Spider-Man Official 4K Trailer">
+        </a>
+          <div class="card-meta">
+            <span>3:07</span>
+          </div>
+        </div>
+        <div class="card-block">
+          <h4 class="card-title"><a href="video-post.html">Spider-Man Official 4K Trailer</a></h4>
+          <div class="card-meta">
+            <span><i class="fa fa-clock-o"></i> 2 weeks ago</span>
+            <span>1798 views</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-video">
+        <div class="card-img">
+          <a href="video-post.html">
+          <img src="https://i1.ytimg.com/vi/9EzRBzdf--g/mqdefault.jpg" alt="METRO EXODUS Gameplay Trailer">
+        </a>
+          <div class="card-meta">
+            <span>1:24</span>
+          </div>
+        </div>
+        <div class="card-block">
+          <h4 class="card-title"><a href="video-post.html">Wolfenstein II Gameplay Trailer</a></h4>
+          <div class="card-meta">
+            <span><i class="fa fa-clock-o"></i> July 16, 2017</span>
+            <span>7330 views</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,16 @@
+<meta property="place:location:latitude" content="13.062616" /> <!-- Silahkan disesuaikan -->
+<meta property="place:location:longitude" content="80.229508" /> <!-- Silahkan disesuaikan -->
+<meta property="business:contact_data:country_name" content="Country" /> <!-- Silahkan disesuaikan -->
+<meta property="business:contact_data:email" content="<?=setting('email')?>" /> <!-- Silahkan disesuaikan -->
+<meta property="business:contact_data:phone_number" content="<?=setting('telepon')?>" /> <!-- Silahkan disesuaikan -->
+<meta property="business:contact_data:website" content="<?=$title;?>" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143661681-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143661681-1');
+</script>
+
